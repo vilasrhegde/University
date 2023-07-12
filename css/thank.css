@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    margin: 0;
+    background-image: url(https://cdn.hipwallpaper.com/i/67/97/ndo3QM.jpg);
+}
+.pad{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10%;
+    box-shadow: 0px 0px 10px 2px rgba(252, 253, 252, 0.575);
+    z-index: 1;
+
+}
+h1{
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    cursor:none;
+}
+b{
+    color: red;
+}
+h3{
+    font-size: 2rem;
+    color: rgba(252, 253, 252, 0.575);
+    cursor:none;
+}
+#smiley{
+    font-size: 8rem;
+    color:rgba(252, 253, 252, 0.4); 
+    transition: 1s;
+    cursor:wait;
+}
+#smiley:hover{
+    font-size: 8rem;
+    color:rgba(252, 253, 252, 0.8); 
+    transform: translateY(-10%);
+}
+
+nav{
+    position: fixed;
+    background: transparent;
+    z-index: 2;
+    width: 100%;
+    display: inline-block;
+    margin: 1% auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+ul a .fa{
+    font-size: 40px;
+    z-index: 12;
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+}
+#exit{
+    position: absolute;
+    right: 2%;
+    position: absolute;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.658);
+    cursor: pointer;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    top: 0;
+    padding: 5px 5px;
+    transition: ease-in-out;
+
+    transform: scale(1);
+}
+#exit:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: ease-in-out;
+
+    transform: scale(0.9);
+}
+#back{
+    position: absolute;
+    left: 1%;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.658);
+    cursor: pointer;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    top: 0;
+    padding: 5px 5px;
+    transition: ease-in-out;
+    transform: scale(1);
+}
+#back:hover{
+    color: rgba(255, 255, 255, 1);
+    transition: ease-in-out;
+
+    transform: scale(0.9);
+}
+b{
+    color: red;
+}
+
+

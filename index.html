@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="withdevice-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" type="image/png" sizes="32x32"  href="./Images/titleimg.png">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+ <script src="https://kit.fontawesome.com/2d3dc5d61d.js" crossorigin="anonymous"></script>
+    </head>
+    
+<body onmousewheel="showMenu()" onload="preload()" oncontextmenu="alert('Think Twice before Click')">
+  <!---- <div id="loading"></div> --->
+
+
+
+  <!-------------login---------------->
+<section onbeforeunload="return exitfunc()"class="log" id="log">
+
+
+  <script>
+    function exitfunc() {
+      return "";
+    }
+    </script>
+<center>
+
+
+    <div onclick="hideMenu()" class="form-box">
+        
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+        </div>
+        
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <center>
+            <input  type="checkbox" class="check-box"><span> Remember me</span>
+        </center>
+            <button type="submit" class="sub-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group"  >
+            <input
+             type="text" class="input-field" placeholder="Email-ID" required>
+            <input  type="email" class="input-field" placeholder="Enter Password" required>
+            <center>
+            <input type="checkbox" class="check-box">
+
+            <span> I agree to all T&C</span>
+        </center>
+            <button type="submit" class="sub-btn">Register</button>
+        </form>
+
+        <i id="windowminimise" style="color:rgba(0, 0, 0, 0.699);" onclick="hidelog(this.id)"><img src="./Images/Line.png"></i>
+    </div>   
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register(){
+        x.style.left = "-100%";
+        y.style.left = "0";
+        z.style.left = "50%";
+    }
+    function login(){
+        x.style.left = "0";
+        y.style.left = "100%";
+        z.style.left = "0%";
+    }
+
+</script>
+<script>
+    var logs=document.getElementById("log");
+    function showlog(){
+        logs.style.top="0";
+        logs.style.opacity="1";
+    }
+    function hidelog() {
+        logs.style.top="-100vh";
+        logs.style.opacity="0";
+    }
+</script>
+
+
+
+
+<!---javascript-->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right="0";
+    }
+    function hideMenu() {
+    navLinks.style.right="-100%";
+    }
+    </script>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="bg"></div>
+
+        <section onkeypress="showMenu()" onmousedown="showMenu()"  id="home" class="header">
+            <nav>
+                <a  href="index.html"></a>
+                <div onclick="hideMenu()" class="nav-links" id="navLinks">
+                    <img src="./Images/V.jpg">
+                    <center>       
+                    <ul>
+          
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#page2">COURSES</a></li>
+                        <li><a href="#facilities">FACILITIES</a></li>
+                        <li><a id="login" onclick="showlog()">LOGIN</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a target="_blank" href="./pages/feedback.html">FEEDBACK</a></li>           
+                    </ul>
+                    <i id="menu" class="fa fa-times" onclick="hideMenu()"></i>
+         </center>
+                </div>
+                <i id="close" class="fa fa-chevron-circle-down" onclick="showMenu()"></i>
+        
+            </nav>
+           
+   <div class="text-box">
+       <center>
+       <h1>World's worst University</h1>
+       <p onselect="select(this.tagName)">This Website is made for Learning purpose only.<br>Contents are not intended to resemble any University.<br>
+         That's it you're good to go!
+       </p>
+       <a href="https://earth.google.com/web/" target="_blank" class="hero-btn">Visit now</a>
+    </center>
+   </div>         
+
+        </section>
+        <!-----course---->
+        <div id="page2">
+            
+        </div>
+
+
+        <section id="courses" class="course" onmouseenter="pageshow(this.id)" onmouseleave="pagehide(this.id)">
+            <h1>Courses we offer</h1>
+            <p >We got a great money wasting idea to devastate your career</p>
+            
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>You're in the middle of hell of a journey.
+                        We would like to cheer up your grand future.
+                        see ya!</p>
+                </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Okay now, here you wanna grab a hold on everything
+                        you come across, leave everythingnow and ignore this 
+                        as you skip this one too.</p>
+                        </div>
+                    <div class="course-col">
+                        <h3>Post Graduation</h3>
+                        <p>Once you get all certificates here you will start to
+                            feel like Shah Rukh Khan by knowing his value in ZERO.</p>
+                            </div>
+            </div>
+            <center>
+            <p>Nothing makes sense here : -)</p>
+                <br>
+            </center>
+
+        </section>
+
+        <!----campus-->
+        <section id="campus" onmouseenter="pageshow(this.id)" onmouseleave="pagehide(this.id)" class="campus">
+<h1>Our Global campus</h1>
+<p>We're sure that you won't like it but formally just asking that's it.</p>
+<div class="row">
+<div class="campus-col">
+    <img src="Images/washington.png">
+    <div class="layer">
+        <h3>WASHINGTON</h3>
+    </div>
+    </div>
+    
+    <div class="campus-col">
+        <img src="Images/london.png">
+        <div class="layer">
+            <h3>LONDON</h3>
+        </div>
+        </div>
+        <div class="campus-col">
+            <img src="Images/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+        </section>
+
+        <!-----Facilities---->
+        <section onmouseenter="pageshow(this.id)" onmouseleave="pagehide(this.id)" id="facilities" class="facilities">
+            <h1>Our Facilities</h1>
+            <p>Not for your use, just for flex</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="Images/library.png">
+                    <h3>World class Library</h3>
+                    <p>Where Romeo and Juliet story begins whenever you enter here.</p>
+                </div>
+            
+            <div class="facilities-col">
+                <img src="Images/basketball.png">
+                <h3>Play with some Real Balls</h3>
+                <p>Nobody cares how good you play they want to know what you play.</p>
+            </div>
+       
+            <div class="facilities-col">
+                <img src="Images/cafeteria.png">
+                <h3>Where the Cook do Experiments</h3>
+                <p>You can survive only if you got a good companion, which is rare!</p>
+            </div>
+        
+       
+        </section>
+      <!------Testimonials----->
+
+      <section id="testimonials" onmouseenter="pageshow(this.id)" onmouseleave="pagehide(this.id)" class="testimonials">
+        <h1>What our Donkeys Says</h1>
+        <p>Don't look at this it's all fake.</p>
+
+        <div class="row">
+
+            <div class="testimonials-col">
+                <img src="Images/user1.jpg">
+                <h3>Susy Gala</h3>
+                <div>
+                    <p>They paid hefty to mock them all by just saying anything but giving 5 stars</p>
+                   
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="Images/user2.jpg">
+                <h3>Mark Ruffalo</h3>
+                <div>
+                    <p>No I'm a topper student and I believe they are gifting us to give honest opinions.</p>
+                  
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                    <i class="fa fa-star-o"></i>
+
+             
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <!------Call to action---->
+      <section class="cta">
+          <h1>Enroll for any courses now!</h1>
+          <a href="#log" onclick="showlog()" class="hero-btn">JOIN NOW</a>
+
+      </section>
+
+       <!------Footer---->
+
+       <section id="about" class="footer">
+<h2>About us</h2>
+<p>We are a noob company have nothing to do like you
+    and this is a lifetime opportunity for all!</p>
+    <div class="icons">
+    <a href="https://github.com/rhvilas" target="_blank">
+        <i class="fa fa-github"></i></a>
+    <a href="https://twitter.com/Vilashegde7" target="_blank">
+        <i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/vilas-hegde-1a2796197/"target="_blank">
+        <i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/thevilashegde/"target="_blank">
+        <i class="fa fa-instagram"></i></a>
+    <a href="https://www.facebook.com/vilas.hegde.1/"target="_blank">
+            <i class="fa fa-facebook"></i></a>
+            <br>
+    <p>Made by Vilas Hegde</p>
+<p>Incase any lag occurs change your old device now! I'm willing to resolve any problems for a better experience.</p>
+<p style="color: rgba(255, 255, 255, 0.247); letter-spacing: 2px;">Thank you for coming till here :)</p>
+    </div>
+       </section>
+
+        <!---javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.top="0";
+                navLinks.style.opacity="1";
+            }
+            function hideMenu() {
+                navLinks.style.top="-100vh";
+                navLinks.style.opacity="0";
+            }
+        </script>
+
+
+
+<!----
+        <script>
+            var preloader = document.getElementById('loading');
+
+            function preload(){
+                preloader.style.display='none';
+            }
+        </script>
+    -->
+    <script>
+        function pageshow(x) {
+            document.getElementById(x).style.opacity="100%";
+        }
+    </script> 
+
+          <script>
+            function pagehide(y) {
+           document.getElementById(y).style.opacity="70%";
+            }
+            </script> 
+            <script>
+                function select(x){
+               document.getElementsByTagName(x).style.color="white";
+                }
+                </script> 
+
+
+ </body>
+</html>

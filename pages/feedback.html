@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>FeedBack</title>   
+        <link rel="stylesheet" href="../css/feedback.css"> 
+        <script src="https://kit.fontawesome.com/2d3dc5d61d.js" crossorigin="anonymous"></script>
+
+
+
+    </head>
+    <body onbeforeunload="return exitfunc()">
+        <script>
+            function exitfunc() {
+              return "";
+            }
+            </script>
+
+
+<div class="bg"></div>
+
+<nav>
+    <ul>
+     <a href="../index.html">
+         <i id="back"  class="fa fa-chevron-left" aria-hidden="true"></i>
+      </a>
+      <a href="./star.html">
+      <i id="next" class="fa fa-chevron-right"aria-hidden="true"></i>
+      </a>
+      
+    </ul> 
+ </nav>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button  type="button" class="toggle-btn" id="btn1" onclick="student()">Student</button>
+                    <button type="button" class="toggle-btn" id="btn2" onclick="staff()">Staff</button>
+                </div>
+              
+         
+                
+                <form id="student" class="input-group">
+                    <input id="changeback" onfocus="myFunction(this.id)" type="text" class="input-field" placeholder="USN" required>
+                    <input  id="changeback2" onfocus="myFunction(this.id)"  type="text" class="input-field" placeholder="Password" required>
+                    <center>
+                        <input type="checkbox" class="check-box">
+                        <span>Remember me</span>
+                    </center>
+                 
+                    <button type="submit" ondblclick='alert("Not now, come back later")' class="sub-btn" ><a href="./thank.html">Sign in</a></button>
+                </form>
+                <form id="staff" class="input-group">
+                    <input  id="changeback3" onfocus="myFunction(this.id)"  type="email" class="input-field" placeholder="Email-ID" required>
+                    <input  id="changeback4" onfocus="myFunction(this.id)"  type="text" class="input-field" placeholder="Enter Password" required>
+                    <center>
+                    <input type="checkbox" class="check-box">
+                        <span>Remember me</span>
+                    </center>
+                    <button type="submit" ondblclick='alert("Not now, come back later")'    class="sub-btn"><a href="./thank.html">Login</a></button>
+                </a> 
+                </form>
+            </div>
+
+            <center>
+                <div class="circle1"></div>
+                </div id="two">
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </center>   
+            </div>
+      
+        <script>
+            var x = document.getElementById("student");
+            var y = document.getElementById("staff");
+            var z = document.getElementById("btn");
+
+            function staff(){
+                x.style.opacity = "0";
+                y.style.opacity = "1";
+                z.style.left = "50%";
+                x.style.left="-50%";
+                y.style.right="0%";
+            }
+            function student(){
+                x.style.opacity = "1";
+                y.style.opacity = "0";
+                z.style.left = "0%";
+                x.style.left="0%";
+                y.style.right="-50%";
+            }
+
+        </script>
+     <script>
+        function myFunction(x) {
+          document.getElementById(x).style.background = "rgba(255,255,255,0.8)";
+        }
+        </script>
+       
+  <!---javascript-->
+  <script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu() {
+        navLinks.style.right="-200px";
+    }
+</script>
+
+    </body>
+
+</html>
